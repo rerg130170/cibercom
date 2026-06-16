@@ -1,0 +1,861 @@
+/*------------------------------------------------------------------
+ * Multipurpose: Free Template by FreeHTML5.co
+ * Author: https://freehtml5.co
+ * Facebook: https://facebook.com/fh5co
+ * Twitter: https://twitter.com/fh5co
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of styles content]
+
+1 - Header
+2 - Hero
+3 - CTA
+4 - Services
+5 - Featured
+6 - Recent Posts
+7 - Trust
+8 - Pricing Tables
+9 - Testimonials
+10 - Clients
+11 - CTA 2
+12 - Footer Widgets
+13 - Foot Note
+14 - Gallery Grid Section
+--------------------------------------------------------------------*/
+/*-----------------------------------
+    1 - Header (Flexbox Optimized)
+------------------------------------*/
+header {
+  background-color: rgba(26, 10, 56, 0.53);
+  color: #fff;
+  z-index: 1000;
+}
+
+header a {
+  color: #fff;
+}
+
+header::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.top-header .contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-link {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact {
+  font-size: 12px;
+}
+
+.tel {
+  margin-right: 30px;
+}
+
+.contact i {
+  color: #5e5ce0;
+  margin-right: 10px;
+}
+
+.login {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+
+.contact a:hover,
+.login:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.login i {
+  color: #5e5ce0;
+  margin-right: 8px;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+}
+
+.social {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social a {
+  font-size: 14px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5e5ce0;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.social a:hover {
+  color: #fff;
+  background-color: #5e5ce0;
+}
+
+.navbar-brand img {
+  width: 135px;
+  opacity: 0.53;
+}
+
+.navbar-collapse .search-form input[type="text"] {
+  border: 1px solid #ced4da;
+  color: #333;
+  padding: 1.5625rem 0.625rem;
+}
+
+.navbar-collapse .search-form .btn {
+  margin-top: 0;
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.navbar-collapse .nav-link {
+  font-size: 1.125rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #5e5ce0;
+}
+
+.cart,
+.login-icon,
+.search-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.cart:hover,
+.login-icon:hover,
+.search-icon:hover {
+  color: #5e5ce0;
+}
+
+.cart {
+  margin-left: 20px;
+}
+
+form input.btn-primary:hover,
+form button.btn-primary:hover {
+  background-color: #fff;
+  color: #5e5ce0;
+}
+
+/*-----------------------------------
+    2 - Hero (Fondo Ajustado y Responsivo)
+------------------------------------
+.hero {
+  background: url("../images/fondo_opaco90.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 5;
+}
+
+.hero .slide-content {
+  min-height: 600px;
+  color: #fff;
+}
+
+.hero .slide-content span {
+  color: rgb(94, 92, 224);
+}
+
+.hero .slide-content h1 {
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  font-weight: bold;
+}
+
+.hero .slide-content p {
+  color: #000000;
+  transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  padding: 35px 0 35px 30px;
+  background-color: rgba(94, 92, 224, 0.7);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.hero .slide-content .btn {
+  margin-top: 50px;
+}
+
+.hero .slide-content .btn:last-child {
+  margin-left: 30px;
+}
+
+.hero .arr-left,
+.hero .arr-right {
+  font-size: 3rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.hero .arr-left:hover,
+.hero .arr-right:hover {
+  cursor: pointer;
+}
+
+.hero .arr-right {
+  right: 15px;
+}
+
+.hero .diag-bg {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: rgba(240, 0, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .texture {
+  width: 100%;
+  height: 100%;
+  background: url("../images/hero-texture.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: 29%;
+}
+
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: 58%;
+}
+
+/* Media Query para pantallas pequeñas en Hero 
+@media (max-width: 576px) {
+  .hero .slide-content {
+    min-height: 480px;
+    padding-top: 120px;
+  }
+  .hero .slide-content h1 {
+    font-size: 2rem;
+  }
+} */
+
+/* CODIGO NUEVO */
+/*-----------------------------------
+    2 - Hero (Optimizado para evitar cortes inferiores)
+------------------------------------
+.hero {
+  background: url("/Users/rrosario/Desktop/Cibercom/assets/images/fondo300.jpg") no-repeat center bottom;
+  background-size: 50%; /* Mantiene la proporción de la imagen sin distorsión 
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px; /* Asegura altura suficiente para la correcta visualización de la imagen 
+}
+
+.hero .container {
+  position: relative;
+  z-index: 5;
+}
+
+.hero .slide-content {
+  min-height: 600px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.hero .slide-content span {
+  color: rgb(94, 92, 224);
+}
+
+.hero .slide-content h1 {
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  font-weight: bold;
+}
+
+.hero .slide-content p {
+  color: #000000;
+  transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  padding: 35px 0 35px 30px;
+  background-color: rgba(94, 92, 224, 0.7);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.hero .slide-content .btn {
+  margin-top: 50px;
+}
+
+.hero .slide-content .btn:last-child {
+  margin-left: 30px;
+}
+
+.hero .arr-left,
+.hero .arr-right {
+  font-size: 3rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.hero .arr-left:hover,
+.hero .arr-right:hover {
+  cursor: pointer;
+}
+
+.hero .arr-right {
+  right: 15px;
+}
+
+.hero .diag-bg {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: rgba(240, 0, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .texture {
+  width: 100%;
+  height: 100%;
+  background: url("../images/hero-texture.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: 29%;
+}
+
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: 58%;
+}
+
+/* Media Query para pantallas pequeñas en Hero 
+@media (max-width: 576px) {
+  .hero {
+    min-height: 480px;
+    background-position: center bottom; /* Mantiene la prioridad inferior en móviles 
+  }
+  .hero .slide-content {
+    min-height: 480px;
+    padding-top: 120px;
+  }
+  .hero .slide-content h1 {
+    font-size: 2rem;
+  }
+} */
+/*-----------------------------------
+    2 - Hero (Optimizado para visualización completa de imagen y texto)
+------------------------------------*/
+.hero {
+  background: url("../images/logo10.jpg") no-repeat center bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* Optimización para pantallas de escritorio (mantiene la proporción de la imagen) */
+@media (min-width: 992px) {
+  .hero {
+    aspect-ratio: 16 / 7.5; /* Ajusta dinámicamente la altura para mostrar la imagen completa */
+    min-height: auto;       /* Permite que aspect-ratio controle la altura vertical */
+  }
+  .hero .slide-content {
+    min-height: auto;
+    height: 100%;
+    padding: 130px 0 80px;  /* Protege el contenido para que no se superponga con el Header absoluto */
+  }
+}
+
+.hero .container {
+  position: relative;
+  z-index: 5;
+}
+
+.hero .slide-content {
+  min-height: 600px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.hero .slide-content span {
+  color: rgb(94, 92, 224);
+}
+
+.hero .slide-content h1 {
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  font-weight: bold;
+}
+
+.hero .slide-content p {
+  color: #000000;
+  transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  padding: 35px 0 35px 30px;
+  background-color: rgba(94, 92, 224, 0.7);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.hero .slide-content .btn {
+  margin-top: 50px;
+}
+
+.hero .slide-content .btn:last-child {
+  margin-left: 30px;
+}
+
+.hero .arr-left,
+.hero .arr-right {
+  font-size: 3rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.hero .arr-left:hover,
+.hero .arr-right:hover {
+  cursor: pointer;
+}
+
+.hero .arr-right {
+  right: 15px;
+}
+
+.hero .diag-bg {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: rgba(240, 0, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .texture {
+  width: 100%;
+  height: 100%;
+  background: url("../images/hero-texture.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: 29%;
+}
+
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: 58%;
+}
+
+/* Media Query para pantallas pequeñas en Hero */
+@media (max-width: 576px) {
+  .hero {
+    min-height: 480px;
+    background-position: center bottom;
+  }
+  .hero .slide-content {
+    min-height: 480px;
+    padding-top: 120px;
+  }
+  .hero .slide-content h1 {
+    font-size: 2rem;
+  }
+}
+/*-----------------------------------
+    3 - CTA
+------------------------------------*/
+.cta-content {
+  padding: 30px 0 90px;
+  color: #fff;
+  background-color: #5e5ce0;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 9, 53, 0.77);
+  position: absolute;
+  top: -25px;
+  left: -1px;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-content .subscribe-btn {
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+/*-----------------------------------
+    4 - Services
+------------------------------------*/
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title h6 {
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 35px;
+}
+
+.title .title-blue {
+  color: #26264b;
+}
+
+.title .title-primary {
+  color: #5e5ce0;
+}
+
+.services {
+  padding: 80px 0 50px;
+}
+
+.services .title {
+  margin-bottom: 20px;
+}
+
+.services .media {
+  margin: 40px 0;
+}
+
+.services h5 {
+  color: #26264b;
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/*-----------------------------------
+    11 - CTA 2
+------------------------------------*/
+.cta2 {
+  margin: 50px 0 -30px;
+}
+
+/*-----------------------------------
+    12 - Footer Widgets
+------------------------------------*/
+footer {
+  background: url(../images/footer-bg.png) center center/cover no-repeat #26264b;
+}
+
+.footer-widgets {
+  padding: 100px 0;
+}
+
+.footer-widgets .col-md-6 .single-widget:not(:first-child) .widget-tiltle {
+  margin: 40px 0 30px;
+}
+
+.single-widget {
+  color: #aaa;
+}
+
+.single-widget .widget-tiltle {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.single-widget i {
+  color: #5e5ce0;
+}
+
+.single-widget h6 {
+  color: #fff;
+}
+
+.single-widget .media {
+  margin-bottom: 20px;
+}
+
+.contact-widget a {
+  color: #aaa;
+}
+
+.contact-widget i {
+  font-size: 22px;
+}
+
+.twitter-widget i,
+.twitter-widget h6 {
+  color: #777;
+}
+
+span {
+  color: #fff;
+}
+
+.subscribe-widget form {
+  margin-bottom: 10px;
+}
+
+.subscribe-widget input {
+  font-size: 14px;
+  padding: 0px 10px;
+  background-color: #444;
+  border: none;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe-widget input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.subscribe-widget button {
+  background: #5e5ce0;
+  border: none;
+  padding: 9px 14px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: -10px;
+  position: relative;
+  z-index: 5;
+}
+
+.subscribe-widget button i {
+  color: #fff;
+}
+
+.subscribe-widget .social-nav {
+  margin-top: 32px;
+}
+
+.subscribe-widget .social-nav a {
+  display: inline-block;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #ddd;
+  background-color: #444;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 10px;
+}
+
+.subscribe-widget .social-nav a i {
+  color: #ddd;
+}
+
+.subscribe-widget .social-nav a:hover {
+  background-color: #5e5ce0;
+}
+
+/*-----------------------------------
+    13 - Foot Note
+------------------------------------*/
+.foot-note {
+  padding: 35px 0;
+  background-color: #5e5ce0;
+  color: #26264b;
+}
+
+.foot-note a {
+  color: #26264b;
+}
+
+.foot-note a:last-child {
+  margin-left: 30px;
+}
+
+.foot-note a.fh5-link {
+  margin-left: 0;
+}
+
+/*-----------------------------------
+    14 - Gallery Grid Section (CSS Grid)
+------------------------------------*/
+.gallery-section {
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+
+.gallery-section .title {
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 92, 224, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item .overlay i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
