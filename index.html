@@ -58,33 +58,22 @@
             </div> 
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html"><img src="assets/images/logo150x150sf.png" alt="Logo"></a>
-                <div class="group d-flex align-items-center">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
-                    <a class="login-icon d-sm-none" href="#"><i class="fa fa-user"></i></a>
-                    <a class="cart" href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-                <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#serv">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Clientes">Clientes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Equipo">Nuestro equipo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                     </ul>
-                    <form class="bg-white search-form" method="get" id="searchform">
-                        <div class="input-group">
-                            <input class="field form-control" id="s" name="s" type="text" placeholder="Search">
-                            <span class="input-group-btn">
-                                <input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"
-                                    value="Search">
-                            </span>
-                        </div>
-                    </form>
                 </div>
             </nav>
         </div> 
@@ -168,58 +157,76 @@
             </div>
             <div class="container">
                 <div class="row">
+                    <!-- Servicio 1 -->
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
-                            <img class="mr-4" src="assets/images/Camara72x72.jpg" alt="Instalación de cámaras">
-                            <div class="media-body">
-                                <h5>CAMARAS DE SEGURIDAD</h5>
-                                Instalación y configuración de IP y Analógicas.
-                            </div>
+                            <a href="servicios.html#camaras" class="service-link">
+                                <img class="mr-4" src="assets/images/Camara72x72.jpg" alt="Instalación de cámaras">
+                                <div class="media-body">
+                                    <h5>CAMARAS DE SEGURIDAD</h5>
+                                    Instalación y configuración de IP y Analógicas.
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <!-- Servicio 2 -->
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
-                            <img class="mr-4" src="assets/images/control72x72.jpg" alt="Control de acceso">
-                            <div class="media-body">
-                                <h5>CONTROL DE ACCESO</h5>
-                                Descripción del servicio.
-                            </div>
+                            <a href="servicios.html#control-acceso" class="service-link">
+                                <img class="mr-4" src="assets/images/control72x72.jpg" alt="Control de acceso">
+                                <div class="media-body">
+                                    <h5>CONTROL DE ACCESO</h5>
+                                    Descripción del servicio.
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <!-- Servicio 3 -->
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
-                            <img class="mr-4" src="assets/images/porteria72x72.jpg" alt="Video portería">
-                            <div class="media-body">
-                                <h5>VIDEO PORTERIA</h5>
-                                Descripción del servicio.
-                            </div>
+                            <a href="servicios.html#video-porteria" class="service-link">
+                                <img class="mr-4" src="assets/images/porteria72x72.jpg" alt="Video portería">
+                                <div class="media-body">
+                                    <h5>VIDEO PORTERIA</h5>
+                                    Descripción del servicio.
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <!-- Servicio 4 -->
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
-                            <img class="mr-4" src="assets/images/biometrica72x72.jpg" alt="Sistemas biométricos">
-                            <div class="media-body">
-                                <h5>BIOMETRICA</h5>
-                                Descripción del servicio.
-                            </div>
+                            <a href="servicios.html#biometrica" class="service-link">
+                                <img class="mr-4" src="assets/images/biometrica72x72.jpg" alt="Sistemas biométricos">
+                                <div class="media-body">
+                                    <h5>BIOMETRICA</h5>
+                                    Descripción del servicio.
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <!-- Servicio 5 -->
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
-                            <img class="mr-4" src="assets/images/asistencia72x72.jpg" alt="Control de asistencia">
-                            <div class="media-body">
-                                <h5>CONTROL DE ASISTENCIA</h5>
-                                Descripción del servicio.
-                            </div>
+                            <a href="servicios.html#asistencia" class="service-link">
+                                <img class="mr-4" src="assets/images/asistencia72x72.jpg" alt="Control de asistencia">
+                                <div class="media-body">
+                                    <h5>CONTROL DE ASISTENCIA</h5>
+                                    Descripción del servicio.
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <!-- Servicio 6 -->
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
-                            <img class="mr-4" src="assets/images/Instalacion72x72.jpg" alt="Instalación SimpleTV">
-                            <div class="media-body">
-                                <h5>INSTALACION DE SYMPLETV</h5>
-                                Descripción del servicio.
-                            </div>
+                            <a href="servicios.html#simpletv" class="service-link">
+                                <img class="mr-4" src="assets/images/Instalacion72x72.jpg" alt="Instalación SimpleTV">
+                                <div class="media-body">
+                                    <h5>INSTALACION DE SYMPLETV</h5>
+                                    Descripción del servicio.
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -234,44 +241,44 @@
                 <h6>NUESTRA</h6>
                 <h1 class="title-blue">GALERÍA</h1>
             </div>
-            <!-- Cambiado ID a Clase para evitar duplicidad -->
             <div class="gallery-grid lightgallery-init">
                 <a href="assets/images/gallery1.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/gallery1.jpg" alt="Proyecto 1">
+                    <img src="assets/images/acceso.jpg" alt="Proyecto 1">
                     <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 </a>
                 <a href="assets/images/gallery2.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/images/gallery2.jpg" alt="Proyecto 2">
+                    <img src="assets/images/Instalacioncamara.jpg" alt="Proyecto 2">
                     <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 </a>
                 <a href="assets/images/gallery3.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/images/gallery3.jpg" alt="Proyecto 3">
+                    <img src="assets/images/Biometrico.jpg" alt="Proyecto 3">
                     <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 </a>
                 <a href="assets/images/gallery1.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="400">
-                    <img src="assets/images/gallery1.jpg" alt="Proyecto 4">
+                    <img src="assets/images/videoporteros.jpg" alt="Proyecto 4">
                     <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 </a>
                 <a href="assets/images/gallery2.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="500">
-                    <img src="assets/images/gallery2.jpg" alt="Proyecto 5">
+                    <img src="assets/images/Instalacion.jpg" alt="Proyecto 5">
                     <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 </a>
                 <a href="assets/images/gallery3.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="600">
-                    <img src="assets/images/gallery3.jpg" alt="Proyecto 6">
+                    <img src="assets/images/Camara externa.jpg" alt="Proyecto 6">
                     <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 </a>
             </div>
         </div>
     </section>
     <!-- Gallery Section End -->
-    <!-- Clientes Section Start -->
+
+    <!--CODIGO VIEJO
+     Clientes Section Start 
     <section id="Clientes" class="gallery-section">
         <div class="container">
             <div class="title text-center">
                 <h6>NUESTROS</h6>
                 <h1 class="title-blue">CLIENTES</h1>
             </div>
-            <!-- Cambiado ID a Clase para evitar duplicidad -->
             <div class="gallery-grid lightgallery-init">
                 <a href="assets/images/gallery1.jpg" class="gallery-item" data-aos="fade-up" data-aos-delay="100">
                     <img src="assets/images/gallery1.jpg" alt="Proyecto 1">
@@ -300,7 +307,65 @@
             </div>
         </div>
     </section>
+     Clientes Section End --> 
+     <!-- Clientes Section Start -->
+    <section id="Clientes" class="gallery-section">
+        <div class="container">
+            <div class="title text-center">
+                <h6>NUESTROS</h6>
+                <h1 class="title-blue">CLIENTES</h1>
+            </div>
+            
+            <!-- Grid de Videos Responsivo -->
+            <div class="video-grid">
+                
+                <!-- Video Cliente 1 -->
+                <div class="video-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-wrapper">
+                        <video controls poster="assets/images/video-poster1.jpg" preload="none">
+                            <source src="assets/videos/Video1.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5>Iglesia Adventista del Séptimo Día</h5>
+                        <p>Instalación de camaras de seguridad IP full HD de 5 MP.</p>
+                    </div>
+                </div>
+
+                <!-- Video Cliente 2 -->
+                <div class="video-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-wrapper">
+                        <video controls poster="assets/images/video-poster2.jpg" preload="none">
+                            <source src="assets/videos/Video2.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5>Hospital Ortopedico Infantil</h5>
+                        <p>Instalación de servicio Inter Satelital.</p>
+                    </div>
+                </div>
+
+                <!-- Video Cliente 3 -->
+                <div class="video-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="video-wrapper">
+                        <video controls poster="assets/images/video-poster3.jpg" preload="none">
+                            <source src="assets/videos/Video3.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5>Aeropuerto Internacional de Maiquetia</h5>
+                        <p>Diseño, instalación e implementación de sistema Biométrico Dactilar.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!--  Clientes Section End -->
+    
     <!-- Call To Action 2 Start -->
     <section class="cta cta2" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
@@ -318,7 +383,6 @@
     <!-- Call To Action 2 End -->
     <!-- Footer Start -->
     <footer>
-        <!-- Widgets Start -->
         <div class="footer-widgets">
             <div class="container">
                 <div class="row">
@@ -361,8 +425,6 @@
                 </div>
             </div>
         </div>
-        <!-- Widgets End -->
-        <!-- Foot Note Start -->
         <div class="foot-note">
             <div class="container">
                 <div
@@ -371,9 +433,14 @@
                 </div>
             </div>
         </div>
-        <!-- Foot Note End -->
     </footer>
     <!-- Footer End -->
+
+    <!-- Botón flotante para subir al inicio -->
+    <a href="#" id="back-to-top" class="back-to-top" title="Volver arriba">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
     <!--jQuery-->
     <script src="assets/js/jquery-3.3.1.js"></script>
     <!--Plugins-->
