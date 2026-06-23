@@ -670,3 +670,23 @@ span {
   line-height: 1.45;
   margin-bottom: 0;
 }
+
+/*------------------------------------------------------------------
+    17 - Ajustes específicos para la sección Nuestro Equipo
+--------------------------------------------------------------------*/
+
+/* Modificamos el comportamiento de grid para esta sección específica */
+.team-grid {
+  display: grid;
+  /* Fuerza un esquema de columnas para pantallas grandes pero responsivo */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Define el espacio horizontal y vertical entre imágenes */
+}
+
+/* Ajustes particulares para las imágenes del equipo */
+.team-grid .gallery-item img {
+  /* Evita que se recorten los rostros o cabezas en la parte superior */
+  object-position: top;
+  /* Mantiene el comportamiento de llenado para respetar el aspecto visual de la plantilla */
+  object-fit: cover;
+}
